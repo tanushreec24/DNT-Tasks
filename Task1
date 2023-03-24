@@ -1,0 +1,44 @@
+import turtle
+t=turtle.Turtle()
+size=100
+t.penup()
+t.goto(-150, 150)
+t.begin_fill()
+t.pendown()
+t.color("red")
+for i in range(4):
+    t.forward(size)
+    t.left(90)
+t.end_fill()
+
+t.penup()
+t.goto(-35, 150)
+t.begin_fill()
+t.pendown()
+t.color("green")
+for i in range(4):
+    t.forward(size)
+    t.left(90)
+t.end_fill()
+
+t.penup()
+t.goto(-150, 35)
+t.begin_fill()
+t.pendown()
+t.color("blue")
+for i in range(4):
+    t.forward(size)
+    t.left(90)
+t.end_fill()
+
+t.penup()
+t.goto(-35, 35)
+t.begin_fill()
+t.pendown()
+t.color("yellow")
+for i in range(4):
+    t.forward(size)
+    t.left(90)
+t.end_fill()
+t.hideturtle()
+turtle.done()
